@@ -1,0 +1,40 @@
+name: tao_device_controller
+description: TAO Device Controller - Comprehensive IoT device management application
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  firebase_core: ^2.24.0
+  firebase_database: ^10.2.0
+  firebase_auth: ^4.15.0
+  socket_io_client: ^2.0.1
+  http: ^1.1.0
+  provider: ^6.1.0
+  intl: ^0.19.0
+  flutter_local_notifications: ^15.0.0
+  workmanager: ^0.5.1
+  connectivity_plus: ^5.0.0
+  permission_handler: ^11.4.4
+  flutter_blue_plus: ^1.41.0
+  shared_preferences: ^2.2.0
+  lottie: ^2.7.0
+  table_calendar: ^3.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/

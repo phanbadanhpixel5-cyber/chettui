@@ -1,0 +1,185 @@
+-- TAO Device Controller - Vietnamese Translation Reference --
+
+=== APPLICATION TITLES ===
+app_title = "Bộ Điều Khiển Thiết Bị TAO"
+
+=== NAVIGATION ===
+nav_home = "Trang Chủ"
+nav_schedule = "Lịch Trình"
+nav_settings = "Cài Đặt"
+nav_weather = "Thời Tiết"
+
+=== CONNECTION STATUS ===
+status_connected = "Đã Kết Nối"
+status_disconnected = "Chưa Kết Nối"
+status_connecting = "Đang Kết Nối..."
+status_error = "Lỗi Kết Nối"
+
+=== DEVICES ===
+devices_title = "Thiết Bị"
+devices_empty = "Không có thiết bị nào được kết nối"
+device_on = "BẬT"
+device_off = "TẮT"
+device_status = "Trạng Thái"
+device_control = "Điều Khiển Thiết Bị"
+
+=== WEATHER ===
+weather_title = "Thời Tiết"
+weather_temperature = "Nhiệt Độ"
+weather_humidity = "Độ Ẩm"
+weather_wind_speed = "Tốc Độ Gió"
+weather_conditions = "Điều Kiện"
+weather_location = "Vị Trí"
+weather_update = "Cập Nhật Lúc"
+weather_degree = "°C"
+weather_percent = "%"
+weather_kmh = "km/h"
+weather_refresh = "Làm Mới"
+weather_loading = "Đang Tải Thời Tiết..."
+
+=== SCHEDULE ===
+schedule_title = "Lịch Trình"
+schedule_add_new = "Thêm Lịch Trình"
+schedule_device = "Thiết Bị"
+schedule_time = "Thời Gian"
+schedule_action = "Hành Động"
+schedule_action_on = "Bật"
+schedule_action_off = "Tắt"
+schedule_days = "Ngày Trong Tuần"
+schedule_monday = "Thứ Hai"
+schedule_tuesday = "Thứ Ba"
+schedule_wednesday = "Thứ Tư"
+schedule_thursday = "Thứ Năm"
+schedule_friday = "Thứ Sáu"
+schedule_saturday = "Thứ Bảy"
+schedule_sunday = "Chủ Nhật"
+schedule_enabled = "Đã Bật"
+schedule_disabled = "Đã Tắt"
+schedule_edit = "Chỉnh Sửa"
+schedule_delete = "Xóa"
+schedule_save = "Lưu"
+schedule_cancel = "Hủy"
+schedule_coming_soon = "Lịch Trình Sắp Có"
+schedule_no_schedule = "Chưa có lịch trình nào"
+
+=== SETTINGS ===
+settings_title = "Cài Đặt"
+settings_backend_url = "URL Backend"
+settings_api_key = "Khóa API"
+settings_weather_location = "Vị Trí Thời Tiết"
+settings_language = "Ngôn Ngữ"
+settings_theme = "Giao Diện"
+settings_theme_dark = "Tối"
+settings_theme_light = "Sáng"
+settings_notifications = "Thông Báo"
+settings_notifications_enabled = "Bật Thông Báo"
+settings_notifications_disabled = "Tắt Thông Báo"
+settings_save = "Lưu Cài Đặt"
+settings_coming_soon = "Cài Đặt Sắp Có"
+settings_about = "Về Ứng Dụng"
+settings_version = "Phiên Bản"
+settings_help = "Trợ Giúp"
+
+=== CONNECTION MONITORING ===
+connection_good = "Kết Nối Tốt"
+connection_weak = "Kết Nối Yếu"
+connection_poor = "Kết Nối Kém"
+connection_offline = "Ngoại Tuyến"
+connection_arduino = "Arduino"
+connection_firebase = "Firebase"
+connection_backend = "Backend"
+
+=== ERRORS ===
+error_connection = "Lỗi Kết Nối"
+error_device_control = "Lỗi Điều Khiển Thiết Bị"
+error_weather_load = "Lỗi Tải Thời Tiết"
+error_invalid_input = "Đầu Vào Không Hợp Lệ"
+error_try_again = "Thử Lại"
+error_close = "Đóng"
+
+=== GENERAL ACTIONS ===
+loading = "Đang Tải..."
+save = "Lưu"
+delete = "Xóa"
+edit = "Chỉnh Sửa"
+add = "Thêm"
+back = "Quay Lại"
+confirm = "Xác Nhận"
+cancel = "Hủy"
+yes = "Có"
+no = "Không"
+ok = "OK"
+refresh = "Làm Mới"
+search = "Tìm Kiếm"
+filter = "Lọc"
+sort = "Sắp Xếp"
+more = "Thêm"
+info = "Thông Tin"
+time = "Thời Gian"
+date = "Ngày"
+duration = "Thời Lượng"
+
+=== COMMON PHRASES ===
+"System Status" = "Trạng Thái Hệ Thống"
+"No devices connected" = "Không có thiết bị nào được kết nối"
+"Scheduling Coming Soon" = "Lịch Trình Sắp Có"
+"Settings Coming Soon" = "Cài Đặt Sắp Có"
+"Last updated" = "Cập nhật lúc"
+"Feels Like" = "Cảm Giác"
+
+=== DART GETTERS ===
+appTitle
+navHome, navSchedule, navSettings, navWeather
+statusConnected, statusDisconnected, statusConnecting, statusError
+devicesTitle, devicesEmpty, deviceOn, deviceOff, deviceStatus, deviceControl
+weatherTitle, weatherTemperature, weatherHumidity, weatherWindSpeed
+weatherConditions, weatherLocation, weatherUpdate, weatherDegree
+weatherPercent, weatherKmh, weatherRefresh, weatherLoading
+scheduleTitle, scheduleAddNew, scheduleDevice, scheduleTime, scheduleAction
+scheduleActionOn, scheduleActionOff, scheduleDays, scheduleMonday
+scheduleTuesday, scheduleWednesday, scheduleThursday, scheduleFriday
+scheduleSaturday, scheduleSunday, scheduleEnabled, scheduleDisabled
+scheduleEdit, scheduleDelete, scheduleSave, scheduleCancel
+scheduleComingSoon, scheduleNoSchedule
+settingsTitle, settingsBackendUrl, settingsApiKey, settingsWeatherLocation
+settingsLanguage, settingsTheme, settingsThemeDark, settingsThemeLight
+settingsNotifications, settingsNotificationsEnabled, settingsNotificationsDisabled
+settingsSave, settingsComingSoon, settingsAbout, settingsVersion, settingsHelp
+connectionGood, connectionWeak, connectionPoor, connectionOffline
+connectionArduino, connectionFirebase, connectionBackend
+errorConnection, errorDeviceControl, errorWeatherLoad, errorInvalidInput
+errorTryAgain, errorClose
+loading, save, delete, edit, add, back, confirm, cancel, yes, no, ok
+refresh, search, filter, sort, more, info, time, date, duration
+
+=== USAGE EXAMPLE ===
+Widget build(BuildContext context) {
+  final l10n = AppLocalizations.of(context);
+  return Text(l10n.appTitle);  // "Bộ Điều Khiển Thiết Bị TAO"
+}
+
+=== HOW TO ADD NEW STRINGS ===
+1. Open lib/l10n/app_localizations.dart
+2. Add to _localizedStrings['vi'] map:
+   'new_key': 'Chuỗi tiếng Việt',
+3. Add getter method:
+   String get newKey => translate('new_key');
+4. Use in widgets:
+   Text(AppLocalizations.of(context).newKey)
+
+=== LOCALE CONFIGURATION ===
+Primary Locale: vi (Tiếng Việt)
+Supported Locales: vi, en
+Default Theme: Dark Mode (Tối)
+Material Design Version: 3
+
+=== FILE LOCATIONS ===
+- Localization: /flutter/lib/l10n/app_localizations.dart
+- Main App: /flutter/lib/main.dart
+- Guides: /VIETNAMESE_UI_GUIDE.md (this file)
+
+=== VERSION INFO ===
+Version: 1.0.0
+Language: Vietnamese (Tiếng Việt)
+Created: 2024
+Last Updated: 2024
