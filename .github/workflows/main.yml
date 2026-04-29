@@ -24,4 +24,45 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
     
-    # ... phần còn lại giữ nguyên
+      - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.19.0'
+        channel: 'stable'
+    
+    - name: Get dependencies
+      working-directory: ./flutter
+      run: flutter pub get
+    
+    - name: Build APK
+      working-directory: ./flutter
+      run: flutter build apk --release
+    
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: tao-device-controller-apk
+        path: flutter/build/app/outputs/flutter-apk/app-release.apk
+    
+    - name: Create Release
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v1.0.${{ github.run_number }}
+        name: TAO Device Controller v1.0.${{ github.run_number }}
+        body: |
+          ## TAO Device Controller - Bộ Điều Khiển Thiết Bị
+          
+          ### Cài đặt trên Android:
+          1. Tải file APK bên dưới
+          2. Cho phép "Cài đặt từ nguồn không xác định" trong Settings
+          3. Mở file APK và cài đặt
+          
+          ### Tính năng:
+          - Điều khiển 4 thiết bị
+          - Xem thời tiết thời gian thực
+          - Lập lịch trình tự động
+          - Giao diện tiếng Việt
+        files: flutter/build/app/outputs/flutter-apk/app-release.apk
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
