@@ -1,7 +1,7 @@
 name: Build Flutter APK
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # THÊM DÒNG NÀY
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   push:
@@ -16,14 +16,15 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v5  # ĐỔI TỪ @v4 THÀNH @v5
+      uses: actions/checkout@v5
     
     - name: Setup Java
-      uses: actions/setup-java@v5  # ĐỔI TỪ @v4 THÀNH @v5
+      uses: actions/setup-java@v5
       with:
         distribution: 'temurin'
         java-version: '17'
-  - name: Setup Flutter
+    
+    - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
         flutter-version: '3.19.0'
